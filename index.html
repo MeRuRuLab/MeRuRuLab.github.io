@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/1.css" type="text/css" rel="stylesheet">
+    <title>流水线丶</title>
+    <style type="text/css">
+        body
+        {
+            background-image: url("img/background.jpg");
+            text-align: center;
+            background-attachment: fixed;
+
+        }
+
+        div
+        {
+            margin:0 auto;
+            position: relative;
+            display: inline-block;
+
+        }
+        #splink
+        {
+            bottom: 12px;
+            left: 20px;
+            position: absolute;
+
+        }
+    </style>
+
+    <script>
+        var ispaly=false;
+            function playMusic () {
+              var  m= document.getElementById('music');
+                if(!ispaly)
+                {
+                    m.play();
+                    ispaly=true;
+                }
+                else
+                    {
+                        m.pause();
+                        ispaly=false;
+                    }
+            }
+    </script>
+</head>
+<body>
+
+<div  name="topWindow" >
+    <img src="img/Window1.jpg" width="847" height="360">
+    <img src="img/play.png" style="position: absolute;top: 5px "  width="45" height="40" onclick="playMusic()">
+    <a id="splink"  href="https://lawlietz.github.io" target="_self"><img src="img/jxlogo.png"></a>
+</div><iframe src="http://blog.csdn.net/qq_15507559/article/details/79149801" width="847px" height="540px" frameborder="no" scrolling="no" ></iframe>
+    <audio id="music" src="http://wfz-1251582993.cosgz.myqcloud.com/恋爱写真(Instrumental).mp3" loop="loop" preload="auto" ></audio>
+
+
+</body>
+</html>
